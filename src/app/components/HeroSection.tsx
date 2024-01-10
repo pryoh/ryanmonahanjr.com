@@ -20,7 +20,7 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
             </span>
           </h1>
           <TypeAnimation
-            className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold"
+            className="text-white mb-4 text-3xl sm:text-4xl lg:text-6xl font-extrabold"
             sequence={[
               "Web Developer", // Types 'One'
               2000, // Waits 1s
@@ -46,20 +46,20 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
               Hire Me
             </button>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white mt-3">
-              <span className="block bg-slate-800 hover:bg-slate-200 rounded-full px-5 py-2">
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
             </button>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-slate-800 w-[250px] h-[250px] lg:w[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               src="/images/hero-image.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
             />
           </div>
         </div>
