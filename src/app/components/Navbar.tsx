@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import NavLink from "./NavLink";
-// import MenuOverlay from "./MenuOverlay";
+import MenuOverlay from "./MenuOverlay";
 
 // Define the type for each navigation link
 type NavLinkType = {
@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       {/* Render MenuOverlay component conditionally based on navbarOpen state */}
-      {/* navbarOpen ? <MenuOverlay links={navLinks} /> : null */}
+      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
 };
