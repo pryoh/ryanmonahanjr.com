@@ -57,7 +57,7 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
             <Image
               src="/images/hero-image.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={400}
               height={400}
             />
