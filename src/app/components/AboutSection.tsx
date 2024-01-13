@@ -61,7 +61,7 @@ const AboutSection: React.FC = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/about-image.png"
-          alt="About Image"
+          alt="about image"
           width={500}
           height={500}
         />
@@ -76,15 +76,27 @@ const AboutSection: React.FC = () => {
             I am excited to work with others to create amazing applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
-            {TAB_DATA.map((tabData) => (
-              <TabButton
-                key={tabData.id}
-                selectTab={() => handleTabChange(tabData.id)}
-                active={tab === tabData.id}
-              >
-                {tabData.title}
-              </TabButton>
-            ))}
+            <TabButton
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}
+            >
+              {" "}
+              Skills{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}
+            >
+              {" "}
+              Education{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("certifications")}
+              active={tab === "certifications"}
+            >
+              {" "}
+              Certifications{" "}
+            </TabButton>
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab)?.content}

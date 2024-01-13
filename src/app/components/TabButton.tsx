@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 interface TabButtonProps {
   active: boolean;
@@ -7,7 +7,7 @@ interface TabButtonProps {
   children: React.ReactNode;
 }
 
-const variants = {
+const variants: Variants = {
   default: { width: 0 },
   active: { width: "calc(100% - 0.75rem)" },
 };
@@ -17,7 +17,9 @@ const TabButton: React.FC<TabButtonProps> = ({
   selectTab,
   children,
 }) => {
-  const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
+  const buttonClasses = active
+    ? "text-white border-b border-primary-500"
+    : "text-[#ADB7BE]";
 
   return (
     <button onClick={selectTab}>
