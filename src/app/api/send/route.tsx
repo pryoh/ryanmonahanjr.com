@@ -18,6 +18,12 @@ export default async function handler(
     const { email, subject, message } = req.body;
     console.log(email, subject, message);
 
+    if (fromEmail == null) {
+      // Handle the case where FROM_EMAIL is undefined or null
+      res.status(500).json({ error: "FROM_EMAIL is not defined" });
+      return;
+    }
+
     const data = await resend.emails.send({
       from: fromEmail,
       to: [fromEmail, email],
