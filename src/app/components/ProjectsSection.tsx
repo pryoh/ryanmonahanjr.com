@@ -17,30 +17,23 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "tradersanonnft.com",
+    description:
+      "Solana web app to buy NFT ticket that serves as a membership to all services provided by Traders Anonymous",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/pryoh/tradersanonnft.com",
+    previewUrl: "https://www.tradersanonnft.com/",
   },
   {
     id: 2,
-    title: "Next.js Portfolio Website",
-    description: "Project 2 description",
+    title: "uploadanon.com",
+    description:
+      "Solana web app to buy NFT art piece in exchange for ticket as a free upgrade for Traders Anonymous holders.",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "Next.js Crypto Website",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/pryoh/uploadanon.com",
+    previewUrl: "https://www.uploadanon.com/",
   },
 ];
 
@@ -84,7 +77,10 @@ const ProjectsSection: React.FC = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul
+        ref={ref}
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12"
+      >
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
