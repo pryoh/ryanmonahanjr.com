@@ -21,7 +21,7 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl ">
           <div className="text-white text-xl sm:text-2xl lg:text-3xl">Hi,</div>
           <span className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-800">
-            I'm Ryan
+            I&#39;m Ryan
           </span>
         </h1>
       </div>
