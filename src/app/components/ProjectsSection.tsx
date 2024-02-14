@@ -17,13 +17,13 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "tradersanonnft.com",
+    title: "tradersanonymous.net",
     description:
       "Solana web app to buy NFT ticket that serves as a membership to all services provided by Traders Anonymous",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/pryoh/tradersanonnft.com",
-    previewUrl: "https://www.tradersanonnft.com/",
+    gitUrl: "https://github.com/pryoh/tradersanonymous.net",
+    previewUrl: "https://www.tradersanonymous.net/",
   },
   {
     id: 2,
@@ -57,7 +57,7 @@ const ProjectsSection: React.FC = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-white mt-4">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
